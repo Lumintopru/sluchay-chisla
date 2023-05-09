@@ -1,0 +1,15 @@
+import random
+
+def generate_random_numbers(start, end, count):
+    random_numbers = []
+    for _ in range(count):
+        random_number = random.randint(start, end)
+        random_numbers.append(random_number)
+    return random_numbers
+
+start_range = 1  # Начало диапазона
+end_range = 100  # Конец диапазона
+count_numbers = 10  # Количество случайных чисел для генерации
+
+random_numbers = generate_random_numbers(start_range, end_range, count_numbers)
+print(random_numbers)
